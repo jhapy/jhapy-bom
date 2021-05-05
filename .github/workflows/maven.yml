@@ -26,8 +26,14 @@ jobs:
             ${{ runner.os }}-maven-jhapy-bom
       - name: Clean Maven Repository
         run: rm -rf ~/.m2/repository/org/jhapy
+      - name: Configure GPG Key
+        run: |
+          echo -n "$GPG_SIGNING_KEY" | base64 --decode | gpg --import
+        env:
+          GPG_SIGNING_KEY:
+            ${{ secrets.GPG_SIGNING_KEY }}
       - name: Build with Maven
-        run: mvn -Pdeploy-central -Dgpg.passphrase=${{secrets.gpg_passphrase}} -Dmaven.test.skip -s .settings.xml -Dmaven.javadoc.skip -Dossrh_username=${{secrets.ossrh_username}} -Dossrh_password=${{secrets.ossrh_password}} --file pom.xml deploy
+        run: mvn -Pdeploy-central -Dmaven.test.skip -s .settings.xml -Dmaven.javadoc.skip -Dossrh_username=${{secrets.ossrh_username}} -Dossrh_password=${{secrets.ossrh_password}} --file pom.xml deploy
       - name: Slack Success
         uses: 8398a7/action-slack@v3
         with:
