@@ -27,7 +27,7 @@ jobs:
       - name: Clean Maven Repository
         run: rm -rf ~/.m2/repository/org/jhapy
       - name: Build with Maven
-        run: mvn -Pdeploy-central -Dmaven.test.skip -s .settings.xml -Dmaven.javadoc.skip -Dossrh_username=${{secrets.ossrh_username}} -Dossrh_password=${{secrets.ossrh_password}} --file pom.xml deploy
+        run: mvn -Pdeploy-central -Dgpg.passphrase=${{secrets.gpg_passphrase} -Dmaven.test.skip -s .settings.xml -Dmaven.javadoc.skip -Dossrh_username=${{secrets.ossrh_username}} -Dossrh_password=${{secrets.ossrh_password}} --file pom.xml deploy
       - name: Slack Success
         uses: 8398a7/action-slack@v3
         with:
