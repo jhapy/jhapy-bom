@@ -7,5 +7,9 @@
 	<username>${ossrh_username}</username>
 	<password>${ossrh_password}</password>
     </server>
+    <server>
+      <id>gpg.passphrase</id>
+      <passphrase>${gpg_passphrase}</passphrase>
+    </server>
   </servers>
 </settings>
