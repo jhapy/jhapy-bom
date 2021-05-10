@@ -163,7 +163,7 @@
     <twincolselect.version>1.8.0</twincolselect.version>
     <vaadin-date-ranger-picket.version>2.1.1</vaadin-date-ranger-picket.version>
     <vaadin-fullcalendar.version>2.4.0</vaadin-fullcalendar.version>
-    <vaadin-message-dialog.version>1.1.0</vaadin-message-dialog.version>
+    <vaadin-message-dialog.version>1.1.1</vaadin-message-dialog.version>
     <vaadin-spring.version>12.3.3</vaadin-spring.version>
     <app-layout-addon.version>4.0.0</app-layout-addon.version>
     <indeterminate-checkbox.version>1.0.0</indeterminate-checkbox.version>
