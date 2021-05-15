@@ -126,7 +126,7 @@
     <problem-spring.version>0.26.2</problem-spring.version>
     <springdoc-openapi.version>1.5.7</springdoc-openapi.version>
     <springfox.version>3.0.0</springfox.version>
-    <keycloak-admin-client.version>12.0.4</keycloak-admin-client.version>
+    <keycloak-admin-client.version>13.0.0</keycloak-admin-client.version>
     <javax-activation-api.version>1.2.0</javax-activation-api.version>
     <tika.version>1.26</tika.version>
     <jbig2-imageio.version>3.0.3</jbig2-imageio.version>
@@ -148,9 +148,7 @@
     <json-simple.version>1.1.1</json-simple.version>
 
     <!-- Vaddin Stuff -->
-    <vaadin.version>14.5.4</vaadin.version>
-    <autocomplete.version>1.2.0</autocomplete.version>
-    <card.version>2.0.0.beta4</card.version>
+    <vaadin.version>14.5.5</vaadin.version>
     <confirm-dialog.versîon>2.0.0</confirm-dialog.versîon>
     <emptyformlayoutitem.version>1.0.2</emptyformlayoutitem.version>
     <error-window-vaadin.version>3.1.1</error-window-vaadin.version>
