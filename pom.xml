@@ -148,7 +148,7 @@
     <json-simple.version>1.1.1</json-simple.version>
 
     <!-- Vaddin Stuff -->
-    <vaadin.version>14.5.5</vaadin.version>
+    <vaadin.version>14.6.0</vaadin.version>
     <confirm-dialog.versîon>2.0.0</confirm-dialog.versîon>
     <emptyformlayoutitem.version>1.0.2</emptyformlayoutitem.version>
     <error-window-vaadin.version>3.1.1</error-window-vaadin.version>
@@ -172,6 +172,7 @@
     <togglebutton.version>1.0.1</togglebutton.version>
     <vaadin-tooltip.version>1.7.2</vaadin-tooltip.version>
     <vaadin-textfieldformatter.version>5.2.0</vaadin-textfieldformatter.version>
+    <vaadin-security.version>1.0.0</vaadin-security.version>
 
     <!-- These remain empty unless the corresponding profile is active -->
     <profile.swagger/>
@@ -934,7 +935,11 @@
           </exclusion>
         </exclusions>
       </dependency>
-
+      <dependency>
+        <groupId>de.codecamp.vaadin</groupId>
+        <artifactId>vaadin-security-spring-boot-starter</artifactId>
+        <version>${vaadin-security.version}</version>
+      </dependency>
       <dependency>
         <groupId>com.github.scribejava</groupId>
         <artifactId>scribejava-apis</artifactId>
