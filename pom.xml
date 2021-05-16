@@ -148,7 +148,7 @@
     <json-simple.version>1.1.1</json-simple.version>
 
     <!-- Vaddin Stuff -->
-    <vaadin.version>14.6.0</vaadin.version>
+    <vaadin.version>14.5.5</vaadin.version>
     <confirm-dialog.versîon>2.0.0</confirm-dialog.versîon>
     <emptyformlayoutitem.version>1.0.2</emptyformlayoutitem.version>
     <error-window-vaadin.version>3.1.1</error-window-vaadin.version>
@@ -536,6 +536,11 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web-services</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-oauth2-client</artifactId>
         <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
