@@ -147,7 +147,8 @@
     <json-simple.version>1.1.1</json-simple.version>
 
     <!-- Vaddin Stuff -->
-    <vaadin.version>14.5.5</vaadin.version>
+    <vaadin.version>14.6.1</vaadin.version>
+    <a-vaadin-helper.version>1.6.2</a-vaadin-helper.version>
     <confirm-dialog.versîon>2.0.0</confirm-dialog.versîon>
     <emptyformlayoutitem.version>1.0.2</emptyformlayoutitem.version>
     <error-window-vaadin.version>3.1.1</error-window-vaadin.version>
@@ -335,6 +336,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-devtools</artifactId>
         <version>${spring-boot.version}</version>
+        <optional>true</optional>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -997,8 +999,19 @@
       </dependency>
       <dependency>
         <groupId>com.vaadin</groupId>
-        <artifactId>vaadin-spring</artifactId>
-        <version>${vaadin-spring.version}</version>
+        <artifactId>vaadin-spring-boot-starter</artifactId>
+        <version>${vaadin.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-core</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.vaadin.artur</groupId>
+        <artifactId>a-vaadin-helper</artifactId>
+        <version>${a-vaadin-helper.version}</version>
       </dependency>
       <dependency>
         <groupId>de.codecamp.vaadin</groupId>
