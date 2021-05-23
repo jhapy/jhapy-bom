@@ -8,7 +8,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-dependencies</artifactId>
-    <version>2.4.5</version>
+    <version>2.5.0</version>
     <relativePath/>
   </parent>
 
@@ -76,19 +76,19 @@
 
     <!-- Dependency versions -->
     <spring-cloud.version>2020.0.2</spring-cloud.version>
-    <spring-data.version>2021.0.0</spring-data.version>
-    <spring-boot.version>2.4.5</spring-boot.version>
+    <spring-data.version>2021.0.1</spring-data.version>
+    <spring-boot.version>2.5.0</spring-boot.version>
 
-    <spring-data-neo4j.version>6.1.0</spring-data-neo4j.version>
-    <spring-cloud-security.version>2.2.4.RELEASE</spring-cloud-security.version>
+    <spring-data-neo4j.version>6.1.1</spring-data-neo4j.version>
+    <spring-cloud-security.version>2.2.5.RELEASE</spring-cloud-security.version>
     <spring-cloud-starter-zipkin.version>2.2.8.RELEASE</spring-cloud-starter-zipkin.version>
     <spring-security-jwt.version>1.1.1.RELEASE</spring-security-jwt.version>
-    <spring-security-oauth.version>2.5.0.RELEASE</spring-security-oauth.version>
-    <javers-spring-boot-starter-mongo.version>6.0.1</javers-spring-boot-starter-mongo.version>
+    <spring-security-oauth.version>2.5.1.RELEASE</spring-security-oauth.version>
+    <javers-spring-boot-starter-mongo.version>6.1.0</javers-spring-boot-starter-mongo.version>
     <spring-boot-admin.version>2.4.1</spring-boot-admin.version>
-    <spring-data-commons.version>2.5.0</spring-data-commons.version>
-    <spring-context-support.version>5.3.6</spring-context-support.version>
-    <spring-resilience4j.version>1.0.4.RELEASE</spring-resilience4j.version>
+    <spring-data-commons.version>2.5.1</spring-data-commons.version>
+    <spring-context-support.version>5.3.7</spring-context-support.version>
+    <spring-resilience4j.version>2.0.1</spring-resilience4j.version>
 
     <commons-io.version>2.8.0</commons-io.version>
     <commons-lang3.version>3.12.0</commons-lang3.version>
@@ -100,7 +100,7 @@
     <hazelcast-hibernate53.version>2.2.0</hazelcast-hibernate53.version>
     <hazelcast-kubernetes.version>1.3.1</hazelcast-kubernetes.version>
 
-    <hibernate-core.version>5.4.30.Final</hibernate-core.version>
+    <hibernate-core.version>5.4.31.Final</hibernate-core.version>
     <guava.version>30.1.1-jre</guava.version>
     <javamelody.version>1.87.0</javamelody.version>
     <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
@@ -113,18 +113,17 @@
     <logstash-gelf.version>1.14.1</logstash-gelf.version>
     <logstash-logback-encoder.version>6.6</logstash-logback-encoder.version>
     <lombok.version>1.18.20</lombok.version>
-    <mapstruct.version>1.4.2.Final</mapstruct.version>
-    <mariadb-java-client.version>2.7.2</mariadb-java-client.version>
+    <mariadb-java-client.version>2.7.3</mariadb-java-client.version>
     <metrics-core.version>4.1.19</metrics-core.version>
-    <micrometer-core.version>1.6.6</micrometer-core.version>
-    <micrometer-registry-prometheus.version>1.6.6</micrometer-registry-prometheus.version>
+    <micrometer.version>1.7.0</micrometer.version>
     <mongock.version>4.3.8</mongock.version>
     <mysql-jdbc.version>8.0.24</mysql-jdbc.version>
     <orika-core.version>1.5.4</orika-core.version>
+    <mapstruct.version>1.4.2.Final</mapstruct.version>
     <poi.version>4.1.2</poi.version>
     <postgresql-java-client.version>42.2.19</postgresql-java-client.version>
     <problem-spring.version>0.26.2</problem-spring.version>
-    <springdoc-openapi.version>1.5.7</springdoc-openapi.version>
+    <springdoc-openapi.version>1.5.8</springdoc-openapi.version>
     <springfox.version>3.0.0</springfox.version>
     <keycloak-admin-client.version>13.0.0</keycloak-admin-client.version>
     <javax-activation-api.version>1.2.0</javax-activation-api.version>
@@ -136,7 +135,7 @@
     <google-maps-service.version>0.18.0</google-maps-service.version>
     <google-api-client.version>1.31.4</google-api-client.version>
     <validation-api.version>2.0.1.Final</validation-api.version>
-    <jackson-annotations.version>2.9.9</jackson-annotations.version>
+    <jackson-annotations.version>2.12.3</jackson-annotations.version>
     <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
     <firebase-admin.version>6.12.2</firebase-admin.version>
     <freemarker.version>2.3.31</freemarker.version>
@@ -158,7 +157,7 @@
     <rapidpm-functional-reactive.version>01.00.04-RPM</rapidpm-functional-reactive.version>
     <scribejava-apis.version>6.8.1</scribejava-apis.version>
     <textfieldformatter.version>4.1.1</textfieldformatter.version>
-    <twincolselect.version>1.8.0</twincolselect.version>
+    <twincolselect.version>1.8.1</twincolselect.version>
     <vaadin-date-ranger-picket.version>2.1.1</vaadin-date-ranger-picket.version>
     <vaadin-fullcalendar.version>2.4.0</vaadin-fullcalendar.version>
     <vaadin-message-dialog.version>1.1.1</vaadin-message-dialog.version>
@@ -619,16 +618,6 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>io.micrometer</groupId>
-        <artifactId>micrometer-core</artifactId>
-        <version>${micrometer-core.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.micrometer</groupId>
-        <artifactId>micrometer-registry-prometheus</artifactId>
-        <version>${micrometer-registry-prometheus.version}</version>
-      </dependency>
-      <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-core</artifactId>
         <version>${metrics-core.version}</version>
@@ -677,6 +666,31 @@
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
         <version>${validation-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${jackson-annotations.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.dataformat</groupId>
+        <artifactId>jackson-dataformat-yaml</artifactId>
+        <version>${jackson-annotations.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.module</groupId>
+        <artifactId>jackson-module-parameter-names</artifactId>
+        <version>${jackson-annotations.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.jaxrs</groupId>
+        <artifactId>jackson-jaxrs-json-provider</artifactId>
+        <version>${jackson-annotations.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.module</groupId>
+        <artifactId>jackson-module-jaxb-annotations</artifactId>
+        <version>${jackson-annotations.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -1185,7 +1199,13 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
-
+      <dependency>
+        <groupId>io.micrometer</groupId>
+        <artifactId>micrometer-bom</artifactId>
+        <version>${micrometer.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-security-dependencies</artifactId>
@@ -1369,6 +1389,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+              </path>
+              <path>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
               </path>
             </annotationProcessorPaths>
           </configuration>
