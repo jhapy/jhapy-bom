@@ -173,7 +173,7 @@
     <vaadin-tooltip.version>1.7.2</vaadin-tooltip.version>
     <vaadin-textfieldformatter.version>5.2.0</vaadin-textfieldformatter.version>
     <vaadin-security.version>1.0.0</vaadin-security.version>
-
+    <async-manager.version>1.1.0</async-manager.version>
     <!-- These remain empty unless the corresponding profile is active -->
     <profile.swagger/>
     <profile.tls/>
@@ -1196,7 +1196,17 @@
           </exclusion>
         </exclusions>
       </dependency>
-
+      <dependency>
+        <groupId>org.vaadin.helper</groupId>
+        <artifactId>async-manager</artifactId>
+        <version>${async-manager.version}</version>
+        <exclusions>
+          <exclusion>
+            <artifactId>vaadin-core</artifactId>
+            <groupId>com.vaadin</groupId>
+          </exclusion>
+        </exclusions>
+      </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
