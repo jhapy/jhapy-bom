@@ -174,6 +174,8 @@
     <vaadin-textfieldformatter.version>5.2.0</vaadin-textfieldformatter.version>
     <vaadin-security.version>1.0.0</vaadin-security.version>
     <async-manager.version>1.1.0</async-manager.version>
+    <vaadin-geolocation.version>2.0.1</vaadin-geolocation.version>
+
     <!-- These remain empty unless the corresponding profile is active -->
     <profile.swagger/>
     <profile.tls/>
@@ -1200,6 +1202,17 @@
         <groupId>org.vaadin.helper</groupId>
         <artifactId>async-manager</artifactId>
         <version>${async-manager.version}</version>
+        <exclusions>
+          <exclusion>
+            <artifactId>vaadin-core</artifactId>
+            <groupId>com.vaadin</groupId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.vaadin.elmot</groupId>
+        <artifactId>vaadin-geo-location-flow-v14</artifactId>
+        <version>${vaadin-geolocation.version}</version>
         <exclusions>
           <exclusion>
             <artifactId>vaadin-core</artifactId>
