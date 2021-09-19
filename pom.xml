@@ -19,6 +19,7 @@
     <packaging>pom</packaging>
 
     <name>JHapy server-side parent POM</name>
+
     <url>https://github.com/jhapy/jhapy-bom/</url>
 
     <organization>
@@ -92,7 +93,7 @@
         <spring-context-support.version>5.3.9</spring-context-support.version>
         <spring-resilience4j.version>2.0.2</spring-resilience4j.version>
         <spring-vault.version>2.3.2</spring-vault.version>
-        <resilience4j.version>1.7.0</resilience4j.version>
+        <resilience4j.version>1.7.1</resilience4j.version>
         <feign-httpclient.version>11.6</feign-httpclient.version>
 
         <commons-io.version>2.8.0</commons-io.version>
@@ -151,8 +152,10 @@
         <json-simple.version>1.1.1</json-simple.version>
         <caldav4j.version>1.0.1</caldav4j.version>
         <threeten-extra.version>1.7.0</threeten-extra.version>
+
         <!-- Vaddin Stuff -->
-        <vaadin.version>14.7.0.rc1</vaadin.version>
+        <vaadin.version>21.0.1</vaadin.version>
+        <!--vaadin.version>14.7.0</vaadin.version-->
         <!--vaadin.version>14.6.8</vaadin.version-->
         <vaddin-collaboration-engine.version>3.1.0</vaddin-collaboration-engine.version>
         <a-vaadin-helper.version>1.7.1</a-vaadin-helper.version>
@@ -160,7 +163,7 @@
         <emptyformlayoutitem.version>1.0.2</emptyformlayoutitem.version>
         <error-window-vaadin.version>3.1.1</error-window-vaadin.version>
         <file-download-wrapper.version>3.0.1</file-download-wrapper.version>
-        <multiselect-combo-box-flow.version>3.0.2</multiselect-combo-box-flow.version>
+        <vaadin-multiple-select.version>3.0.2</vaadin-multiple-select.version>
         <paged-tabs.version>3.0.0</paged-tabs.version>
         <rapidpm-functional-reactive.version>01.00.04-RPM</rapidpm-functional-reactive.version>
         <scribejava-apis.version>6.8.1</scribejava-apis.version>
@@ -1077,9 +1080,9 @@
                 <version>${spring-data-provider.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.vaadin.gatanaso</groupId>
-                <artifactId>multiselect-combo-box-flow</artifactId>
-                <version>${multiselect-combo-box-flow.version}</version>
+                <groupId>com.vaadin.componentfactory</groupId>
+                <artifactId>multiple-select</artifactId>
+                <version>${vaadin-multiple-select.version}</version>
                 <exclusions>
                     <exclusion>
                         <artifactId>vaadin-core</artifactId>
@@ -1330,14 +1333,17 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven-resources-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
+                <version>${maven-deploy-plugin.version}</version>
             </plugin>
             <!--plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -1346,18 +1352,22 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>${maven-checkstyle.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
+                <version>${sonar-maven-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
+                <version>${maven-gpg-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
+                <version>${git-commit-id-plugin.version}</version>
             </plugin>
         </plugins>
         <pluginManagement>
