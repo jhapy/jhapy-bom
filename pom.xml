@@ -93,6 +93,7 @@
         <spring-context-support.version>5.3.9</spring-context-support.version>
         <spring-resilience4j.version>2.0.2</spring-resilience4j.version>
         <spring-vault.version>2.3.2</spring-vault.version>
+        <spring-kafka.version>2.7.7</spring-kafka.version>
         <resilience4j.version>1.7.1</resilience4j.version>
         <feign-httpclient.version>11.6</feign-httpclient.version>
 
@@ -365,6 +366,11 @@
                         <artifactId>android-json</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${spring-kafka.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
