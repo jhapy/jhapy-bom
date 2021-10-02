@@ -40,7 +40,7 @@
         <jhapy-framework.version>4.0.0-SNAPSHOT</jhapy-framework.version>
 
         <!-- Build properties -->
-        <java.version>16</java.version>
+        <java.version>17</java.version>
         <maven.version>3.6.0</maven.version>
 
         <maven.required.version>3.0</maven.required.version>
@@ -78,6 +78,7 @@
         <versions-maven-plugin.version>2.8.1</versions-maven-plugin.version>
 
         <!-- Dependency versions -->
+        <axon.version>4.5.4</axon.version>
         <spring-cloud.version>2020.0.4</spring-cloud.version>
         <spring-data.version>2021.0.5</spring-data.version>
         <spring-boot.version>2.5.5</spring-boot.version>
@@ -88,11 +89,11 @@
         <spring-security-jwt.version>1.1.1.RELEASE</spring-security-jwt.version>
         <spring-security-oauth.version>2.5.1.RELEASE</spring-security-oauth.version>
         <javers-spring-boot-starter-mongo.version>6.2.5</javers-spring-boot-starter-mongo.version>
-        <spring-boot-admin.version>2.5.1</spring-boot-admin.version>
+        <spring-boot-admin.version>2.5.2</spring-boot-admin.version>
         <spring-data-commons.version>2.5.5</spring-data-commons.version>
-        <spring-context-support.version>5.3.9</spring-context-support.version>
+        <spring-context-support.version>5.3.10</spring-context-support.version>
         <spring-resilience4j.version>2.0.2</spring-resilience4j.version>
-        <spring-vault.version>2.3.2</spring-vault.version>
+        <spring-vault.version>3.0.4</spring-vault.version>
         <spring-kafka.version>2.7.7</spring-kafka.version>
         <resilience4j.version>1.7.1</resilience4j.version>
         <feign-httpclient.version>11.6</feign-httpclient.version>
@@ -128,7 +129,7 @@
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <poi.version>4.1.2</poi.version>
         <postgresql-java-client.version>42.2.19</postgresql-java-client.version>
-        <problem-spring.version>0.26.2</problem-spring.version>
+        <problem-spring.version>0.27.0</problem-spring.version>
         <springdoc-openapi.version>1.5.8</springdoc-openapi.version>
         <springfox.version>3.0.0</springfox.version>
         <keycloak-admin-client.version>15.0.0</keycloak-admin-client.version>
@@ -209,13 +210,18 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.axonframework</groupId>
+                <artifactId>axon-spring-boot-starter</artifactId>
+                <version>${axon.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.keycloak</groupId>
                 <artifactId>keycloak-admin-client</artifactId>
                 <version>${keycloak-admin-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.vault</groupId>
-                <artifactId>spring-vault-dependencies</artifactId>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-vault-dependencies</artifactId>
                 <version>${spring-vault.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
