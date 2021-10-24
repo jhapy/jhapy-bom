@@ -14,7 +14,7 @@
 
     <groupId>org.jhapy</groupId>
     <artifactId>jhapy-bom</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>5.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
@@ -37,7 +37,7 @@
     </developers>
 
     <properties>
-        <jhapy-framework.version>4.0.0-SNAPSHOT</jhapy-framework.version>
+        <jhapy-framework.version>5.0.0-SNAPSHOT</jhapy-framework.version>
 
         <!-- Build properties -->
         <java.version>17</java.version>
@@ -122,6 +122,7 @@
         <logstash-logback-encoder.version>6.6</logstash-logback-encoder.version>
         <lombok.version>1.18.20</lombok.version>
         <mariadb-java-client.version>2.7.3</mariadb-java-client.version>
+        <h2.version>1.4.200</h2.version>
         <metrics-core.version>4.1.19</metrics-core.version>
         <micrometer.version>1.7.0</micrometer.version>
         <mongock.version>4.3.8</mongock.version>
@@ -156,7 +157,7 @@
         <threeten-extra.version>1.7.0</threeten-extra.version>
 
         <!-- Vaddin Stuff -->
-        <vaadin.version>21.0.2</vaadin.version>
+        <vaadin.version>21.0.3</vaadin.version>
         <!--vaadin.version>14.7.0</vaadin.version-->
         <!--vaadin.version>14.6.8</vaadin.version-->
         <vaddin-collaboration-engine.version>3.1.0</vaddin-collaboration-engine.version>
@@ -814,6 +815,11 @@
                 <groupId>org.mariadb.jdbc</groupId>
                 <artifactId>mariadb-java-client</artifactId>
                 <version>${mariadb-java-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.postgresql</groupId>
@@ -1509,6 +1515,11 @@
                                 <artifactId>mapstruct-processor</artifactId>
                                 <version>${mapstruct.version}</version>
                             </path>
+                            <dependency>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok-mapstruct-binding</artifactId>
+                                <version>0.2.0</version>
+                            </dependency>
                         </annotationProcessorPaths>
                     </configuration>
                 </plugin>
